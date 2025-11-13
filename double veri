@@ -1,0 +1,20 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace doubleveri;
+
+internal class doubleveri
+{
+    static void Main(string[] args)
+    {
+        //Double: içerisinde ondalıkklı sayıları tutabilir. floattan daha büyüktür 
+        double sayi = 10;
+        sayi = 5.5d; //sonuna d eklemek zorunda degiliz ama daha düzgün kod yazmak için eklenebilir.
+        Console.WriteLine(sayi);
+        Console.ReadLine();
+        
+    }
+}
