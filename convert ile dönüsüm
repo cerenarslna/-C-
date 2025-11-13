@@ -1,0 +1,32 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace convert;
+
+internal class Program
+{
+    static void Main(string[] args)
+    {
+       //Convert tür dönüşümü için kullanılır.
+       string ad = "Ceren";
+       string strNum = "34";
+       int sayi = 7;
+       double sayi2 = 7.4;
+
+       Console.WriteLine(ad + "" + ad.GetType());
+       Console.WriteLine(sayi + "" + sayi.GetType());
+       Console.WriteLine(sayi2 + "" + sayi2.GetType());
+
+       Console.WriteLine();
+       string yeniDeger = Convert.ToString(sayi);
+       Console.WriteLine(yeniDeger + "" + yeniDeger.GetType());
+       
+       //str to int 
+       int sonDurum = Convert.ToInt32(strNum);
+       Console.WriteLine(sonDurum + "" + sonDurum.GetType());
+       Console.ReadLine();
+    }
+}
