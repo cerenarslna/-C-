@@ -1,0 +1,19 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace decimalveri;
+
+internal class decimalveri
+{
+    static void Main(string[] args)
+    {
+        //decimal ondalıklı sayıları saklamak için kullanılır. genelde para ile ilgili değişkenlerde kullanılır.
+        decimal sayi = 5;
+        sayi = 5.5m;
+        Console.WriteLine(sayi);
+        Console.ReadLine();
+    }
+}
