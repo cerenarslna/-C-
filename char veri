@@ -1,0 +1,28 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace charveri;
+
+internal class charveri
+{
+    static void Main(string[] args)
+    {
+        // char : tek bir karakter saklamak icin kullanılır. tek tırnak kullanmak zorunludur.
+        char harf = 'A';
+        harf = 'b';
+        char harf2 = 'z';
+        harf = harf2 ;
+        harf = 'D';
+        harf2 = 'Y';
+        harf2 = harf ;
+        
+        
+        Console.WriteLine(harf);
+        Console.ReadLine();
+    }
+}
+
+//sonuc D cıkar.
