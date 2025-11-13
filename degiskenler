@@ -1,0 +1,22 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace degiskenler 
+{
+    internal class degiskenler
+    {
+        static void Main(string[] args)
+        {
+          //[veri türü] [degiken adı];
+          //int sayi; //dogru
+          //int sayi_; //dogru
+          //int _sayi; //dogru
+          //int 1sayi; //yalıs
+          //int sayi1; //dogru
+          
+        }
+    }
+}
