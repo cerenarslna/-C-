@@ -1,0 +1,21 @@
+using System;
+ using System.Collections.Generic;
+ using System.Linq;
+ using System.Text;
+ using System.Threading.Tasks;
+ 
+ namespace parseconvertfark;
+ 
+ internal class Program
+ {
+     static void Main(string[] args)
+     {
+         string sayi = "5";
+         //string sayi ="null" olsaydı convert okurdu ama parse hata verir okuyamaz!!!
+         int yeniSayi = Convert.ToInt32(sayi);
+         int yeniSayi2 = int.Parse(sayi);
+         Console.WriteLine(yeniSayi);
+         Console.WriteLine(yeniSayi2);
+         Console.ReadLine();
+     }
+ }
