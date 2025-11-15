@@ -1,0 +1,31 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace NAMESPACE;
+
+internal class Program
+{
+    static void Main(string[] args)
+    {
+        Console.Write("1.sayıyı giriniz : ");
+        double sayi1 = Convert.ToDouble(Console.ReadLine());
+        
+        Console.Write("2.sayiyi giriniz : ");
+        double sayi2 = Convert.ToDouble(Console.ReadLine());
+        
+        double toplam = sayi1 + sayi2;
+        double fark = sayi1 - sayi2;
+        double carpim = sayi1 * sayi2;
+        double bolum = sayi1 / sayi2;
+        
+        Console.WriteLine("toplam : " + toplam);
+        Console.WriteLine("fark : " + fark);
+        Console.WriteLine("bolum : " + bolum.ToString("0.00"));
+        Console.WriteLine("carpım : " + carpim);
+
+        Console.ReadLine();
+    }
+}
