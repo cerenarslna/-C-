@@ -1,0 +1,26 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace atama_op;
+
+internal class Program
+{
+    static void Main(string[] args)
+    {
+        int sayi = 6;
+
+        sayi += 2; // sayi = sayi + 2 ; demek de oluyor
+
+        sayi -= 2;
+
+        sayi /= 2;
+
+        sayi *= 4; 
+        
+        Console.WriteLine(sayi);
+        Console.Read();
+    }
+}
