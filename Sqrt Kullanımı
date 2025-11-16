@@ -1,0 +1,20 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace NAMESPACE;
+
+internal class Program
+{
+    static void Main(string[] args)
+    {
+       Console.WriteLine("Karekökünü bulmak istediğiniz sayıyı giriniz : ");
+       int sayi = Convert.ToInt32(Console.ReadLine());
+       
+       double sonuc = Math.Sqrt(sayi);
+       Console.WriteLine($"{sayi} sayısının karekökü {sonuc}");
+       Console.Read();
+    }
+}x
