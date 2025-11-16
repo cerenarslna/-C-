@@ -1,0 +1,26 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace NAMESPACE;
+
+internal class Program
+{
+    static void Main(string[] args)
+    {
+        int sayi1 = 30;
+        int sayi2 = 20;
+
+        if (sayi1 > sayi2)
+        {
+            Console.WriteLine("Sayi 1 büyüktür sayi 2den ");
+        }
+        else
+        {
+            Console.WriteLine("Sayi 2 büyüktür sayi 1d en "); 
+        }
+       Console.Read();
+    }
+}
