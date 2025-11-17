@@ -1,0 +1,38 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace NAMESPACE;
+
+internal class Program
+{
+    static void Main(string[] args)
+    {
+        int saat = 15;
+
+        if (saat < 10)
+        {
+            Console.WriteLine("günaydin");  
+        }
+        else if  (saat < 20)
+        {
+            Console.WriteLine("iyi günler");
+        }
+        else if (saat < 21)
+        {
+            Console.WriteLine("iyi aksamlar");
+        }
+        else if (saat < 23)
+        {
+            Console.WriteLine("iyi geceler");
+        }
+        else
+        {
+            Console.WriteLine("hiçbir şey çalışmadı!");
+        }
+
+        Console.Read();
+    }
+}
