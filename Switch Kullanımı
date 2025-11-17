@@ -1,0 +1,49 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace SwitchKullanimi
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Birinci sayiyi girin: ");
+            int sayi1 = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Ikinci sayiyi girin: ");
+            int sayi2 = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Sembol(+ - * /) girin: ");
+            string sembol = Console.ReadLine();
+
+            // 10 10 +   sonucunuz: 20
+            // 30 20 -   sonucunuz: 10
+
+            switch (sembol)
+            {
+                case "+":
+                    Console.Write($"Toplama Sonucunuz: {sayi1 + sayi2}");
+                    break;
+
+                case "-":
+                    Console.Write($"Fark Sonucunuz: {sayi1 - sayi2}");
+                    break;
+
+                case "/":
+                    Console.Write($"Bölme Sonucunuz: {sayi1 / sayi2}");
+                    break;
+
+                case "*":
+                    Console.Write($"Çarpma Sonucunuz: {sayi1 * sayi2}");
+                    break;
+
+                default:
+                    Console.Write("Yanlış tuşlama yaptınız");
+                    break;
+            }
+
+            Console.Read();
+        }
+    }
+}
