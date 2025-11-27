@@ -1,0 +1,26 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace NAMESPACE;
+
+internal class Program
+{
+    static void Main(string[] args)
+    {
+        int sayac = 1;
+        while (sayac <= 10)
+        {
+            if (sayac == 5)
+            {
+                sayac++;
+                continue;
+            }
+            Console.WriteLine(sayac);
+            sayac++;
+        }
+        Console.ReadLine();
+    }
+}
