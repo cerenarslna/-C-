@@ -1,0 +1,26 @@
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace DİZİLER;
+
+internal class Program
+{
+    static void Main(string[] args)
+    {
+    Stack listem = new Stack(); //LIFO -> Last in first out 
+    listem.Push(1);
+    listem.Push("iki");
+
+
+    Console.WriteLine(listem.Pop()); //en son eklenen elemanı cıkarır ve geri döndürür.
+    Console.WriteLine(listem.Peek()); // sonraki elemanı yazdırır.
+
+    Console.Read();
+
+    }
+
+}
