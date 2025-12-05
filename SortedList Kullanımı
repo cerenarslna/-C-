@@ -1,0 +1,27 @@
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace DİZİLER;
+
+internal class Program
+{
+    static void Main(string[] args)
+    {
+ 
+        SortedList listem = new SortedList();
+        listem.Add(3, "Bir");
+        listem.Add(2, "iki");
+        listem.Add(1, "üç");
+
+        foreach (DictionaryEntry item in listem)
+        {
+            Console.WriteLine($"Anahtar : {item.Key} Değer : {item.Value}");
+        }
+        Console.Read(); 
+    }
+   // kücükten büyüge gösterir. hashtable ile farkı budur. 
+}
