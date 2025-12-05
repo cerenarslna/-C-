@@ -1,0 +1,24 @@
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace DİZİLER;
+
+internal class Program
+{
+    static void Main(string[] args)
+    {
+        Queue listem = new Queue();  //FİFO -> First in first out
+        listem.Enqueue("Ali");
+        listem.Enqueue("Veli");
+        listem.Enqueue("Ahmet)";
+        listem.Enqueue("Mehmet");
+        
+        Console.WriteLine(listem.Dequeue()); // Ali
+        Console.WriteLine(listem.Peek()); //VELİ 
+    }
+
+}
