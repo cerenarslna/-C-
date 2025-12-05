@@ -1,0 +1,27 @@
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace DİZİLER;
+
+internal class Program
+{
+    static void Main(string[] args)
+    {
+      
+        Hashtable listem = new Hashtable();
+        listem.Add(1, "Bir");
+        listem.Add(2, "ıkı");
+        listem.Add(3, "Ahmet");
+
+        foreach (DictionaryEntry entry in listem) 
+        {
+            Console.WriteLine($"Anahtar : {entry.Key} Değer : {entry.Value}");
+        }
+
+        Console.ReadLine();
+    }
+}
