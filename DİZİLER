@@ -1,0 +1,99 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace DİZİLER;
+
+internal class Program
+{
+    static void Main(string[] args)
+    {
+        // int[] skorlar = new int[5];
+    
+        // string[] renkler = new string[10];
+        
+        
+        //DİZİYE ELEMAN ATAMA 
+
+        // int [] skorlar  = new int[5]; // 1,2,3,4,5 -> 0,1,2,3,4 
+        // skorlar[0] = 10;
+        // skorlar[1] = 20;
+        // skorlar[2] = 30;
+        // skorlar[3] = 40;
+        // skorlar[4] = 50;
+        //
+        // Console.Write(skorlar[2]);
+        // Console.Read();
+        // 
+        
+        //int [] skorlar  = new int[5] {1,2,3,4,5}; // bir diğer tanımlama yöntemi 
+        
+       // int [] skorlar = {1,2,3,4,5};  // bir diğer tanımlama yöntemi 2  
+
+
+        
+       
+       // DİZİDEKİ ELEMANLARI OKUMA  
+       
+       
+       //
+       // string[] meyveler = { "Muz", "Çilek", "portakal", "Kivi", "Elma", "Kiraz","Nar","Karpuz","Kavun" };
+       //
+       // Console.WriteLine($"Toplam meyve sayısı : {meyveler.Length}");
+       //
+       // for (int i = 0; i < meyveler.Length; i++)
+       // {
+       //     Console.WriteLine($"{i +1 }. meyve : {meyveler[i]}");
+       // }
+       //
+       // Console.Read();
+       //
+    
+       
+       
+       //DİZİYE KULLANICIDAN ELEMAN EKLEME 
+
+       
+       
+       // Console.Write("Dizi uzunlugunu girin : ");
+       // int diziBoyutu = Convert.ToInt32(Console.ReadLine());
+       // int[] sayilar = new int[diziBoyutu];
+       // for (int i = 0; i < diziBoyutu; i++)
+       // {
+       //     Console.WriteLine($"{i+1}.ci elemanı girin :");
+       //     sayilar[i] = int.Parse(Console.ReadLine());
+       // }
+       //
+       // Console.WriteLine("Tüm elemanlar dolduruldu");
+       // Console.WriteLine($"Dizideki eleman sayisi : {sayilar.Length} ");
+       //
+       // Console.WriteLine("Dizideki elemanlar ");
+       // for (int i = 0; i < diziBoyutu; i++)
+       // {
+       //     Console.WriteLine($"{i+1}. eleman {sayilar[i]}");
+       // }
+       //
+       //
+       // Console.Read();
+       //
+
+       
+       
+       //FOREACH DÖNGÜSÜ
+       
+       
+       // int[] sayilar = { 1, 2, 3, 4, 5, 6, 7};
+       // foreach (int sayi in sayilar)
+       // {
+       //     Console.WriteLine(sayi);
+       // }
+       //
+       // Console.Read();
+       //
+
+
+
+    }
+}
