@@ -1,0 +1,56 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+namespace METOT;
+
+internal class Program
+{
+    static void Main(string[] args)
+    {
+        Console.WriteLine("Vucut Kitle Indeksi Hesaplama"); 
+        
+        Console.WriteLine("Kilonuzu Giriniz (kg) : ");
+        var kilo = double.Parse(Console.ReadLine());
+       
+        
+        Console.WriteLine("Boyunuzu Giriniz (cm) : ");
+        var boy = double.Parse(Console.ReadLine());
+        
+        double bmi = BMIHesapla(boy, kilo);
+        string sonuc = KiloDurumu(bmi);
+        
+          Console.WriteLine($"Sonucunuz : {sonuc}");
+    }
+
+    static double BMIHesapla(double boy, double kilo)
+    {
+        return kilo / (boy * boy);
+
+    }
+    
+    static string KiloDurumu(double bmi)
+    {
+        string durum = "";
+
+        if (bmi < 1.5)
+        {
+            durum = "Zayıf";
+        }
+        else if (bmi < 24.9)
+        {
+            durum = "İdeal Kilo";
+        }
+
+        else if (bmi < 29.9)
+        {
+            durum = "Fazla Kilo ";
+        }
+        else
+        {
+            durum = "Obezite hastası ";
+        }
+        return durum;
+    }
+}
