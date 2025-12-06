@@ -1,0 +1,31 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+namespace METOT;
+
+internal class Program
+{
+    static void Main(string[] args)
+    {
+        int sonuc1 = Toplama(3, 5);
+        double sonuc2 = Toplama(3.12 , 5.34);
+        
+        Console.WriteLine(sonuc2);
+
+        Console.Read();
+    }
+
+    static int Toplama(int s1, int s2)
+    {
+        return s1 + s2 ;
+
+    }
+    
+    static double Toplama(double s1, double s2)
+    {
+        return s1 + s2 ;
+
+    }
+}
