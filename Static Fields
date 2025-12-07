@@ -1,0 +1,49 @@
+// Program.cs
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace StaticFields
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            
+            //statik ->  bellekte harici olarak tutulan yapılarımızdır.
+            // statik classların içerisindeki tüm metotolar statik olmak zorunda.
+            x
+            Counter.Increment();
+            Counter.Increment();
+           
+            Console.WriteLine("Sayac degeri: "+ Counter.Count);
+
+            Console.Read();
+        }
+    }
+}
+
+
+//Counter.cs
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace StaticFields
+{
+    internal class Counter
+    {
+        public static int Count { get; private set; } // fields
+
+        public static void Increment()
+        {
+            Count++;
+        }
+    }
+}
