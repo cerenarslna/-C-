@@ -1,0 +1,44 @@
+//Program.cs
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace StaticConstructor
+{
+    internal class Program
+    {                                        //yalnızca 1 kez calısır. sınıfa ilk erişildiğinde çalışır.
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Uygulama Adi: " + Settings.AppName);
+
+            Console.Read();
+        }
+    }
+}
+
+
+//Settings.cs
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace StaticConstructor
+{
+    internal class Settings
+    {
+        public static string AppName { get; set; }
+
+        static Settings()
+        {
+            AppName = "MyApp";
+            Console.WriteLine("Static constructor calisti!");
+        }
+
+    }
+}
+
