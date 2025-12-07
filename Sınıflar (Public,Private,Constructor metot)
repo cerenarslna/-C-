@@ -1,0 +1,72 @@
+// Program.cs 
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+namespace METOT;
+
+internal class Program
+{
+    static void Main(string[] args)
+    {
+      Araba araba = new Araba("Fiat", "egea","siyah",2013);
+    /*  araba.marka = "Fiat";
+      araba.renk = "Kırmızı";
+      araba.model = "Egea";
+      araba.yıl = 2024;  */
+      
+      araba.BilgiYazdır();
+
+      
+      Araba araba2 =new Araba("BMW","1.16","BEYAZ",2015);
+      // araba2.DegerAta("BMW","1.16","BEYAZ",2015);
+      araba2.BilgiYazdır();
+      
+      
+      Console.Read();
+    }
+}
+
+
+
+
+
+
+//Araba.cs
+namespace METOT;
+
+ class Araba
+ { 
+  
+      public string marka = "Ford"; 
+      public string model = "Focus";
+      public string renk = "Mavi";
+      public int yıl = 2022;
+
+// Constructor (Yapıcı Metot)
+
+    public Araba(string _marka, string _model, string _renk, int _yıl)
+     {
+         marka = _marka;    
+         model = _model;
+         renk = _renk;
+         yıl = _yıl;
+         
+     }
+      public void BilgiYazdır()
+       {
+           Console.WriteLine($"Marka: {marka}, Model: {model}, Renk: {renk}, Yıl :{yıl}");
+       }
+
+
+      /* public void DegerAta(string _marka, string _model, string _renk, int _yıl )
+       {
+           marka = _marka;
+           model = _model;
+           renk = _renk;
+           yıl = _yıl;
+       }  */
+      
+ }
