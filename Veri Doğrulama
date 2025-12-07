@@ -1,0 +1,66 @@
+// Program.cs
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace VeriDogrulama
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Person person = new Person();
+            person.Age = -5;
+
+            Console.WriteLine(person.Age);
+
+            Console.Read();
+        }
+    }
+}
+
+
+//Person.cs
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace VeriDogrulama
+{
+    internal class Person
+    {
+        private int age;
+
+        public int Age
+        {
+            get 
+            {
+                if (age > 0)
+                {
+                    return age;
+                }
+                else
+                {
+                    return -1;
+                }
+            }
+            set
+            {
+                if (value < 0)
+                {
+                    Console.WriteLine("Yas negatif olamaz");
+                }
+                else
+                {
+                    age = value;
+                }
+            }
+        }
+    }
+}
