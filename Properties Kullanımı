@@ -1,0 +1,46 @@
+// Program.cs
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace PropertiesKullanimi
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Person person = new Person();
+            person.Name = "Ahmet";
+            Console.Write(person.Name);
+
+            Console.Read();
+        }
+    }
+}
+
+
+// Person.cs
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace PropertiesKullanimi
+{
+    internal class Person
+    {
+        private string name;
+
+        public string Name
+        {
+            get { return name; }
+            set { name = value; }
+        }
+    }
+}
