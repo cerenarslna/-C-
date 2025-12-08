@@ -1,0 +1,65 @@
+//program.cs
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace NAMESPACE;
+
+internal class Program
+{
+    static void Main(string[] args)
+    {
+        
+      //Sanal Metot (Virtual Method)
+      
+      Hayvan hayvan = new Hayvan();
+      hayvan.SesCikar();
+      
+      Hayvan kedi = new Kedi();
+      kedi.SesCikar();
+      Hayvan kopek = new Kopek();
+      kopek.SesCikar();
+      
+
+        Console.Read();
+    }
+}
+
+//hayvan.cs
+
+namespace NAMESPACE;
+
+public class Hayvan
+{
+    public virtual void SesCikar()
+    {
+        Console.WriteLine("Hayvan ses cikariyor");
+    }
+}
+
+//kedi.cs
+
+namespace NAMESPACE;
+
+public class Kedi : Hayvan
+{
+    public override void SesCikar()
+    {
+    }
+}
+
+
+//kopek.cs
+
+namespace NAMESPACE;
+
+public class Kopek : Hayvan
+{
+    public override void SesCikar()
+    {
+        Console.WriteLine("Hav hav");
+    }
+}
