@@ -1,0 +1,50 @@
+//program.cs
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace NAMESPACE;
+
+internal class Program
+{
+    static void Main(string[] args)
+    {
+        
+      //Kalıtımda Contructor
+      
+      Employee employee = new Employee();
+        
+      
+      // öncelikle person kısmı calısacak (ana class) sonra employee calısacak.!!!!!
+
+        Console.Read();
+    }
+}
+
+
+//person.cs
+
+namespace NAMESPACE;
+
+public class Person
+{
+    public Person()
+    {
+        Console.WriteLine("Person Constructor calisti");
+    }
+}
+
+//employee.c
+
+namespace NAMESPACE;
+
+public class Employee : Person
+{
+    public Employee()
+    {
+        Console.WriteLine("Employee Constructor calisti");
+    }
+}
