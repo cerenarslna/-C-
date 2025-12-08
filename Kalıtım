@@ -1,0 +1,114 @@
+// Program.cs
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace NAMESPACE;
+
+internal class Program
+{
+    static void Main(string[] args)
+    {
+        
+        var student = new Student();
+        student.FirstName = "John";
+        student.LastName = "Doe";
+        student.Age = 16;
+        student.Lessons = "Math";
+        student.PhoneNumber = "36427846287";
+        
+        
+        Console.WriteLine(student.Intorduce);
+        
+        
+        
+        
+        
+        
+        // var employee = new Employee();
+        //  employee.FirstName = "Deniz";
+        //  employee.LastName = "Kayak";
+        //  employee.Age = 25;
+        //  employee.JobTitle = "Balıkçı";
+        //  employee.Salary = 1000;
+        //  
+        // Console.WriteLine(employee.Intorduce);
+        //
+        
+        
+        
+        
+        
+        // Person person = new Person();
+        // person.FirstName = "Ceren";
+        // person.LastName = "Arslan";
+        // person.Age = 23;
+        //
+        // Console.WriteLine(person.FullName);
+        // Console.WriteLine(person.Intorduce);
+        
+        
+
+        Console.Read();
+    }
+}
+
+
+
+//Person.cs
+
+namespace NAMESPACE;
+
+public class Person
+{
+    public string FirstName { get; set; }  //prop diyince komple geliyor iskelet.
+    public string LastName { get; set; }
+    public byte Age { get; set; }
+
+    public string PhoneNumber { get; set; }
+    //
+    // public string FullName()
+    // {
+    //     return $"{FirstName} {LastName}";
+    // }
+    
+    public string FullName => $"{FirstName} {LastName}";
+    public string Intorduce => $" Hi Im {FullName}";
+
+    // public string Introduce()
+    // {
+    //     return $" Hi Im {FullName}";
+    // }
+}
+
+
+//Student.cs
+
+namespace NAMESPACE;
+
+public class Student : Person
+{
+    // public string FirstName { get; set; }  
+    // public string LastName { get; set; }
+    // public byte Age { get; set; }
+    public string Lessons { get; set; }
+    
+}
+
+
+//employee.cs
+
+namespace NAMESPACE;
+
+public class Employee : Person
+{
+    // public string FirstName { get; set; } 
+    // public string LastName { get; set; }
+    // public byte Age { get; set; }
+    public string JobTitle { get; set; }
+    public decimal Salary { get; set; }
+    
+}
