@@ -1,0 +1,6 @@
+namespace NAMESPACE;
+
+public sealed class Student : Person
+{
+  public string Lessons { get; set; } 
+}  //sealed eklersin ve diğer sayfalarda student sayfasını kalıtım edemezsin yanlıslıkla
