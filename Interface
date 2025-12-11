@@ -1,0 +1,66 @@
+//program.cs
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Runtime.CompilerServices;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace InterfaceNedir
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            IArac arac = new Arac();
+            arac.Calistir();
+            arac.Durdur();
+
+            Console.Read();
+        }
+    }
+}
+
+
+//Arac.cs
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace InterfaceNedir
+{
+    internal class Arac : IArac
+    {
+        public void Calistir()
+        {
+            Console.WriteLine("Araba calistirildi.");
+        }
+
+        public void Durdur()
+        {
+            Console.WriteLine("Araba durduruldu.");
+        }
+    }
+}
+
+
+//IArac.cs
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace InterfaceNedir
+{
+    internal interface IArac
+    {
+        void Calistir();
+        void Durdur();
+    }
+}
