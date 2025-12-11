@@ -1,0 +1,131 @@
+//program.cs
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace CokluInterface
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            IHayvan hayvan = new Kopek();
+            IHayvan hayvan2 = new Kedi();
+            IKosabilir kosabilir = new Insan();
+
+            IKosabilir kosanKopek = (IKosabilir)hayvan;
+            kosanKopek.Kos();
+            hayvan.SesCikar();
+            hayvan2.SesCikar();
+            kosabilir.Kos();
+
+            Console.Read();
+        }
+    }
+}
+
+
+//Insan.cs
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace CokluInterface
+{
+    internal class Insan : IKosabilir
+    {
+        public void Kos()
+        {
+            Console.WriteLine("Insan kosuyor!");
+        }
+    }
+}
+
+
+//IHayvan.cs
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace CokluInterface
+{
+    internal interface IHayvan
+    {
+        void SesCikar();
+    }
+}
+
+//IKosabilir.cs
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace CokluInterface
+{
+    internal interface IKosabilir
+    {
+        void Kos();
+    }
+}
+
+//Kedi.cs
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace CokluInterface
+{
+    internal class Kedi : IHayvan, IKosabilir
+    {
+        public void Kos()
+        {
+            Console.WriteLine("Kedi kosuyor");
+        }
+
+        public void SesCikar()
+        {
+            Console.WriteLine("Miyav Miyav");
+        }
+    }
+}
+
+//Kopek.cs
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace CokluInterface
+{
+    internal class Kopek : IHayvan, IKosabilir
+    {
+        public void Kos()
+        {
+            Console.WriteLine("Kopek kosuyor!");
+        }
+
+        public void SesCikar()
+        {
+            Console.WriteLine("Hav Hav!");
+        }
+    }
+}
+
+
