@@ -1,0 +1,42 @@
+//Program.cs
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace EnumKullanimi
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Bugun gunlerden " + Gunler.Sali);
+
+            Console.Read();
+        }
+    }
+}
+
+//Gunler.cs
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace EnumKullanimi
+{
+    public enum Gunler
+    {
+        Pazartesi,
+        Sali,
+        Carsamba,
+        Persembe,
+        Cuma,
+        Cumartesi,
+        Pazar
+    }
+}
