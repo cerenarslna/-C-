@@ -1,0 +1,88 @@
+//program.cs
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Abstract
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Sekil dikdortgen = new Dikdortgen { Genislik = 3, Uzunluk = 5 };
+            Console.WriteLine("Dikdortgen alani: " + dikdortgen.AlanHesapla());
+
+            Sekil daire = new Daire { YariCap = 4 };
+            Console.WriteLine("Dairenin alani: " + daire.AlanHesapla());
+
+            Console.Read();
+        }
+    }
+}
+
+
+// daire.cs
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Abstract
+{
+    internal class Daire : Sekil
+    {
+        public double YariCap { get; set; }
+        public override double AlanHesapla()
+        {
+            return Math.PI * YariCap * YariCap;
+        }
+    }
+}
+
+
+//sekil.cs
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Abstract
+{
+    abstract class Sekil
+    {
+        public abstract double AlanHesapla();
+       
+        public void SekilBilgisi()
+        {
+            Console.WriteLine("Bu bir geometrik sekildir");
+        }
+    }
+}
+
+
+//dikdörtgen.cs
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Abstract
+{
+    internal class Dikdortgen : Sekil
+    {
+        public double Uzunluk { get; set; }
+        public double Genislik { get; set; }
+
+        public override double AlanHesapla()
+        {
+            return Uzunluk * Genislik;
+        }
+    }
+}
