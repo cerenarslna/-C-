@@ -1,0 +1,30 @@
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace _1_TemelTipKoleksiyonKullanimi
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            ArrayList arrayList = new ArrayList();
+            arrayList.Add("Ahmet");
+            arrayList.Add(1);
+            arrayList.Add(2.5);
+
+            List<int> sayilar = new List<int>();
+            sayilar.Add(2);
+           // sayilar.Add("Mehmet"); HATA
+
+            List<string> isimler = new List<string>();
+            isimler.Add("Görkem");
+           // isimler.Add(5555); HATA
+
+
+        }
+    }
+}
