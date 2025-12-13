@@ -1,0 +1,51 @@
+//program.cs
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace _2_OzelTipKoleksiyonKullanimi
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Customer customer1 = new Customer();
+            customer1.Id = 1;
+            customer1.Name = "Test";
+            customer1.Surname = "TestSurname";
+
+
+            List<Customer> customers = new List<Customer>();
+            customers.Add(customer1);
+            customers.Add(new Customer()
+            {
+                Id = 2,
+                Name = "Mehmet",
+                Surname = "Yıldız"
+            });
+          
+        }
+    }
+}
+
+
+//customer.cs
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace _2_OzelTipKoleksiyonKullanimi
+{
+    public class Customer
+    {
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public string Surname { get; set; }
+    }
+}
